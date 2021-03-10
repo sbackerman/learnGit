@@ -17,4 +17,5 @@ yarn-error.log*
 *.txt
 !aa.txt
 
+# vendor目录下的所有的*.php文件都不需要加入版本库
 vendor/**/*.php
