@@ -1,6 +1,6 @@
 <?php
 
-echo __FILE__ . ' bbbb ' . date("Y-m-d H:i:s") . "<br>" ;
+echo __FILE__ . ' ccc ' . date("Y-m-d H:i:s") . "<br>" ;
 
 
 
