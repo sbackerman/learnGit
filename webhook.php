@@ -46,9 +46,9 @@ function gitee($secret) {
 	
 	$isMatched = $signature === $compute_token;
 	if ($isMatched) {
-		echo '验证失败';
-	} else {
 		echo '验证成功';
+	} else {
+		echo '验证失败';
 	}
 
 	return $isMatched ;
@@ -75,6 +75,7 @@ if($isMatched) {
 	$cmd = "cd {$path} && /usr/bin/git reset --hard origin/master && /usr/bin/git clean -f && /usr/bin/git pull 2>&1" ;
 	$ret =  shell_exec($cmd);
 	file_put_contents('/tmp/learnGit.log', $ret ,FILE_APPEND);
+	echo $cmd ;
 	echo $ret ;
 	exit();
 } else {
