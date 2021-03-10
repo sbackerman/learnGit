@@ -23,7 +23,7 @@ yarn-error.log*
 # 将各个层级目录下的vendor文件下以及子孙文件夹下的 php文件全部忽略掉
 /**/vendor/**/*.php
 
-
+php_errors.log
 
 
 
