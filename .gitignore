@@ -20,6 +20,10 @@ yarn-error.log*
 # vendor目录下的所有的*.php文件都不需要加入版本库
 #vendor/**/*.php
 #/vendor/**/*.php
+# 将各个层级目录下的vendor文件下以及子孙文件夹下的 php文件全部忽略掉
 /**/vendor/**/*.php
+
+
+
 
 
