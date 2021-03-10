@@ -24,6 +24,8 @@ yarn-error.log*
 /**/vendor/**/*.php
 
 php_errors.log
+/*.log
+
 
 
 

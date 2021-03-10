@@ -12,7 +12,7 @@ $path = "/home/wwwroot/learnGit";
 // Headers deliveried from GitHub
 $signature = $_SERVER['HTTP_X_HUB_SIGNATURE'];
 
-file_put_contents('./a.log', $signature,FILE_APPEND)
+file_put_contents('./a.log', $signature,FILE_APPEND);
 
 
 if (0 && $signature) {
