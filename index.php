@@ -1,6 +1,8 @@
 <?php
 
-echo __FILE__ . ' ccc ' . date("Y-m-d H:i:s") . "<br>" ;
+// http://101.132.79.49:8089 
+echo '刘阿勇 ' . date("Y-m-d H:i:s") . "<br>" ;
+
 
 
 
