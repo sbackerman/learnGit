@@ -23,8 +23,7 @@ $secret = "aliyunWebHook";
 
 // Path to your respostory on your server.
 // e.g. "/var/www/respostory"
-// 项目地址
-$path = "/home/wwwroot/learnGit";
+// 项目地址 
 
 // Headers deliveried from GitHub
 //$signature = isset($_SERVER['HTTP_X_HUB_SIGNATURE']) ? $_SERVER['HTTP_X_HUB_SIGNATURE'] : '' ;
@@ -68,7 +67,14 @@ function github() {
 }
 
 
+
+// 检测是否通过验证密钥
 $isMatched = gitee($secret);
+
+// Path to your respostory on your server.
+// e.g. "/var/www/respostory"
+// 项目地址
+$path = "/home/wwwroot/learnGit";
 
 
 if($isMatched) {
