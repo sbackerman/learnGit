@@ -27,7 +27,7 @@ $secret = "aliyunWebHook";
 
 // Headers deliveried from GitHub
 //$signature = isset($_SERVER['HTTP_X_HUB_SIGNATURE']) ? $_SERVER['HTTP_X_HUB_SIGNATURE'] : '' ;
-//file_put_contents('/tmp/learnGit.log', $signature,FILE_APPEND);
+//file_put_contents('/tmp/git.log', $signature,FILE_APPEND);
 
 
 
@@ -80,7 +80,7 @@ $path = "/home/wwwroot/learnGit";
 if($isMatched) {
 	$cmd = "cd {$path} && /usr/bin/git reset --hard origin/master && /usr/bin/git clean -f && /usr/bin/git pull 2>&1" ;
 	$ret =  shell_exec($cmd);
-	file_put_contents('/tmp/learnGit.log', $ret ,FILE_APPEND);
+	file_put_contents('/tmp/git.log', $ret ,FILE_APPEND);
 	echo $cmd ;
 	echo $ret ;
 	exit();
