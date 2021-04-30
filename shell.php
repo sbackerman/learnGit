@@ -13,7 +13,7 @@ echo $cmd . "\n" ;
 echo $ret . "\n" ;
 
 
-exit('done');
+exit(date("Y-m-d H:i:s") . ' done !!!');
 
 
 
